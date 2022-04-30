@@ -7,5 +7,6 @@ router.get("/posts/:id", controller.getPost);
 router.put("/posts/:id", controller.updatePost);
 router.delete("/posts/:id", controller.deletePost);
 router.post("/posts", controller.addPost);
+router.get("/", controller.welcome);
 
 export = router;

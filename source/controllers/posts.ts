@@ -69,6 +69,10 @@ const deletePost = async (req: Request, res: Response, next: NextFunction) => {
   });
 };
 
+const welcome = async (req: Request, res: Response) => {
+  res.send("Welcome to my api");
+};
+
 // adding a post
 const addPost = async (req: Request, res: Response, next: NextFunction) => {
   // get the data from req.body
@@ -88,4 +92,4 @@ const addPost = async (req: Request, res: Response, next: NextFunction) => {
   });
 };
 
-export default { getPosts, getPost, updatePost, deletePost, addPost };
+export default { getPosts, getPost, updatePost, deletePost, addPost, welcome };
